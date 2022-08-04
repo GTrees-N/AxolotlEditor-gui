@@ -46,6 +46,11 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import canvasIconURL from './canvas/canvas.png';
+import canvasInsetIconURL from './canvas/canvas-small.svg';
+import canvasConnectionIconURL from './canvas/canvas-illustration.svg';
+import canvasConnectionSmallIconURL from './canvas/canvas-small.svg';
+
 import twIcon from './tw/tw.svg';
 
 import customExtensionIcon from './custom/custom.svg';
@@ -327,10 +332,30 @@ export default [
             <FormattedMessage
                 defaultMessage="TurboWarp Blocks"
                 description="Name of TW extension"
-                id="tw.twExtension.name"
+                id="gui.extension.canvas.name"
             />
         ),
         extensionId: 'tw',
+        iconURL: twIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="Weird new blocks. Not compatible with Scratch."
+                description="Description of TW extension"
+                id="tgui.extension.canvas.description"
+            />
+        ),
+        featured: true,
+        incompatibleWithScratch: true
+    }, 
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Canvas"
+                description="Canvas"
+                id="tw.twExtension.name"
+            />
+        ),
+        extensionId: 'canvas',
         iconURL: twIcon,
         description: (
             <FormattedMessage
