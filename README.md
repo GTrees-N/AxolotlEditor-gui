@@ -1,16 +1,32 @@
-scratch-gui modified for use in [TurboWarp](https://turbowarp.org/)
+AxolotlEditor  
+美西螈编辑器  
 
-## Setup
 
-See https://docs.turbowarp.org/development/getting-started to setup the complete TurboWarp environment.
 
-If you just want to play with the GUI then it's the same process as upstream scratch-gui.
+
+## 安装  
+首先需要一个良好的网络环境，  
+需要安装好Node.js、npm及Git（GitHub CLI也可以）等应用程序。  
+必要时克隆这个Repo：  
+GitHub CLI：`gh repo clone GTrees-N/AxolotlEditor-gui`  
+Git Bash：`git clone https://github.com/GTrees-N/AxolotlEditor-gui`  
+
+进入到文件夹：`cd AxolotlEditor-gui`
+
+```bash
+npm install
+```  
+*您可能需要`npm i --legacy-peer-deps`指令才能成功完成安装*
+
+
+
+
 
 ## License
 
-TurboWarp's modifications to Scratch are licensed under the GNU General Public License v3.0. See LICENSE or https://www.gnu.org/licenses/ for details.
+《AxolotlEditor》对《TurboWarp》的修改是根据GPL-v3协议授权的. 阅读LICENSE或<https://www.gnu.org/licenses/>以获得详细信息。
 
-The following is the original license for scratch-gui, which we are required to retain. This is NOT the license of this project.
+以下是 Scratch-gui 的原始许可证，我们需要保留该许可证。这**不是**这个项目的许可证。
 
 ```
 Copyright (c) 2016, Massachusetts Institute of Technology
@@ -27,7 +43,21 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-src/lib/default-project/dango.svg is based on [Twemoji](https://twemoji.twitter.com/) and is licensed under CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+
+## 关于  
+本项目离不开以下开源项目：  
+[LLK](//github.com/LLK)的大部分项目。  
+[TurboWarp](//github.com/TurboWarp)的大部分项目。  
+[a49594a/scratch-vm](//github.com/a49594a/scratch-vm)。  
+[52black/scratch-vm](//github.com/52black/scratch-vm)。  
+及其他node_modules。  
+   
+     
+以及[52black](//github.com/52black)与[GarboMuffin](//github.com/GarboMuffin)的帮助。  
+
+
+
+
 
 <!--
 
