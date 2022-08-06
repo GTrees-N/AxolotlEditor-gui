@@ -65,6 +65,7 @@ export default [
             />
         ),
         extensionId: 'music',
+        collaborator: 'Scratch',
         iconURL: musicIconURL,
         insetIconURL: musicInsetIconURL,
         description: (
@@ -85,6 +86,7 @@ export default [
             />
         ),
         extensionId: 'pen',
+        collaborator: 'Scratch',
         iconURL: penIconURL,
         insetIconURL: penInsetIconURL,
         description: (
@@ -105,6 +107,7 @@ export default [
             />
         ),
         extensionId: 'videoSensing',
+        collaborator: 'Scratch',
         iconURL: videoSensingIconURL,
         insetIconURL: videoSensingInsetIconURL,
         description: (
@@ -332,36 +335,39 @@ export default [
             <FormattedMessage
                 defaultMessage="TurboWarp Blocks"
                 description="Name of TW extension"
-                id="gui.extension.canvas.name"
-            />
-        ),
-        extensionId: 'tw',
-        iconURL: twIcon,
-        description: (
-            <FormattedMessage
-                defaultMessage="Weird new blocks. Not compatible with Scratch."
-                description="Description of TW extension"
-                id="tgui.extension.canvas.description"
-            />
-        ),
-        featured: true,
-        incompatibleWithScratch: true
-    }, 
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Canvas"
-                description="Canvas"
                 id="tw.twExtension.name"
             />
         ),
-        extensionId: 'canvas',
+        extensionId: 'tw',
+        collaborator: 'TurboWarp',
         iconURL: twIcon,
         description: (
             <FormattedMessage
                 defaultMessage="Weird new blocks. Not compatible with Scratch."
                 description="Description of TW extension"
                 id="tw.twExtension.description"
+            />
+        ),
+        featured: true,
+        incompatibleWithScratch: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Canvas"
+                description="高级画布指令（另外感谢52black(what)的帮助）"
+                id="gui.extension.canvas.name"
+            />
+        ),
+        extensionId: 'canvas',
+        collaborator: '阿儿法营',
+        iconURL: canvasIconURL,
+        insetIconURL: canvasInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="高级画布指令（另外感谢52black(what)的帮助）"
+                description="高级画布指令（另外感谢52black(what)的帮助）"
+                id="gui.extension.canvas.description"
             />
         ),
         featured: true,
