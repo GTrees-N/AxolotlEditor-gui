@@ -28,7 +28,7 @@ const projectData = translateFunction => {
                 name: 'Stage',
                 variables: {
                     '`jEk@4|i[#Fk?(8x)AV.-my variable': [
-                        translator(messages.variable),
+                        'TFGS',
                         0
                     ]
                 },
@@ -39,7 +39,7 @@ const projectData = translateFunction => {
                 costumes: [
                     {
                         assetId: 'cd21514d0531fdffb22204e0ec5ed84a',
-                        name: translator(messages.backdrop, {index: 1}),
+                        name: 'Background',
                         md5ext: 'cd21514d0531fdffb22204e0ec5ed84a.svg',
                         dataFormat: 'svg',
                         rotationCenterX: 240,
@@ -51,7 +51,7 @@ const projectData = translateFunction => {
             },
             {
                 isStage: false,
-                name: translator(messages.sprite, {index: 1}),
+                name: 'Tera',
                 variables: {},
                 lists: {},
                 broadcasts: {},
@@ -60,13 +60,40 @@ const projectData = translateFunction => {
                 currentCostume: 0,
                 costumes: [
                     {
-                        assetId: '592bae6f8bb9c8d88401b54ac431f7b6',
-                        name: translator(messages.costume, {index: 1}),
+                        assetId: 'bcf454acf82e4504149f7ffe07081dbc',
+                        name: 'Tera-a',
                         bitmapResolution: 1,
-                        md5ext: '592bae6f8bb9c8d88401b54ac431f7b6.svg',
+                        md5ext: 'bcf454acf82e4504149f7ffe07081dbc.svg',
                         dataFormat: 'svg',
-                        rotationCenterX: 44,
-                        rotationCenterY: 44
+                        rotationCenterX: 48,
+                        rotationCenterY: 50
+                    },
+                    {
+                        assetId: '0fb9be3e8397c983338cb71dc84d0b25',
+                        name: 'Tera-b',
+                        bitmapResolution: 1,
+                        md5ext: '0fb9be3e8397c983338cb71dc84d0b25.svg',
+                        dataFormat: 'svg',
+                        rotationCenterX: 46,
+                        rotationCenterY: 53
+                    },
+                    {
+                        assetId: '2daca5f43efc2d29fb089879448142e9',
+                        name: 'Tera-c',
+                        bitmapResolution: 1,
+                        md5ext: '2daca5f43efc2d29fb089879448142e9.svg',
+                        dataFormat: 'svg',
+                        rotationCenterX: 48,
+                        rotationCenterY: 50
+                    },
+                    {
+                        assetId: '5456a723f3b35eaa946b974a59888793',
+                        name: 'Tera-d',
+                        bitmapResolution: 1,
+                        md5ext: '5456a723f3b35eaa946b974a59888793.svg',
+                        dataFormat: 'svg',
+                        rotationCenterX: 46,
+                        rotationCenterY: 53
                     }
                 ],
                 sounds: [],
