@@ -48,8 +48,10 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import canvasIconURL from './canvas/canvas.png';
 import canvasInsetIconURL from './canvas/canvas-small.svg';
-import canvasConnectionIconURL from './canvas/canvas-illustration.svg';
-import canvasConnectionSmallIconURL from './canvas/canvas-small.svg';
+
+import communityIconURL from './community/community.png';
+import communityInsetIconURL from './community/community-small.svg';
+
 
 import twIcon from './tw/tw.svg';
 
@@ -371,7 +373,27 @@ export default [
             />
         ),
         featured: true,
-        incompatibleWithScratch: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Community"
+                description="A营社区相关（多数模块无法获取到正确值）"
+                id="gui.extension.community.name"
+            />
+        ),
+        extensionId: 'community',
+        collaborator: '阿儿法营',
+        iconURL: communityIconURL,
+        insetIconURL: communityInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="A营社区相关（多数模块无法获取到正确值）"
+                description="A营社区相关（多数模块无法获取到正确值）"
+                id="gui.extension.community.description"
+            />
+        ),
+        featured: true,
     },
     {
         name: (
