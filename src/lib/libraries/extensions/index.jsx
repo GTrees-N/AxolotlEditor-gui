@@ -398,6 +398,44 @@ export default [
     {
         name: (
             <FormattedMessage
+                defaultMessage="ScreenSize"
+                description="屏幕尺寸"
+                id="gui.extension.screensize.name"
+            />
+        ),
+        extensionId: 'screensize',
+        collaborator: 'Gtd232',
+        description: (
+            <FormattedMessage
+                defaultMessage="屏幕尺寸"
+                description="屏幕尺寸"
+                id="gui.extension.screensize.description"
+            />
+        ),
+        featured: true,
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="DeviceInfo"
+                description="设备信息"
+                id="gui.extension.deviceinfo.name"
+            />
+        ),
+        extensionId: 'deviceinfo',
+        collaborator: 'Gtd232',
+        description: (
+            <FormattedMessage
+                defaultMessage="设备信息"
+                description="设备信息"
+                id="gui.extension.deviceinfo.description"
+            />
+        ),
+        featured: true,
+    },
+    {
+        name: (
+            <FormattedMessage
                 defaultMessage="Custom Extension"
                 description="Name of custom extension category"
                 id="tw.customExtension.name"
