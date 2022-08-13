@@ -1,8 +1,10 @@
 name: TFGS
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
 
 jobs:
   build:
