@@ -16,7 +16,7 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 10.x
+        node-version: 14.x
     - name: Clone
       run: |
         git clone https://github.com/GTrees-N/AxolotlEditor-gui
@@ -24,6 +24,7 @@ jobs:
     - name: Build
       run: |
         cd AxolotlEditor-gui
+        rm package-lock.json
         npm install
         npm run build
         cd ..
@@ -31,7 +32,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
         build_dir: AxolotlEditor-gui/build
-        target_branch: GTrees-N/AxolotlEditor-gui
+        target_branch: gh-pages
         verbose: true
       env:
         GITHUB_TOKEN: ${{ secrets.D }}
