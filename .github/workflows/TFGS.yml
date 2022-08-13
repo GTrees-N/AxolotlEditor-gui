@@ -20,6 +20,7 @@ jobs:
     - name: Clone
       run: |
         git clone https://github.com/GTrees-N/AxolotlEditor-gui
+        git clone https://github.com/GTrees-N/AxolotlEditor-vm
     - name: Build
       run: |
         cd AxolotlEditor-gui
