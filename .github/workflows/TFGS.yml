@@ -20,13 +20,16 @@ jobs:
     - name: Clone
       run: |
         git clone https://github.com/GTrees-N/AxolotlEditor-gui
-        git clone https://github.com/GTrees-N/AxolotlEditor-vm
     - name: Build
       run: |
         cd AxolotlEditor-gui
         rm package-lock.json
         npm install
         npm run build
+        cd build
+        touch ./CNAME
+        echo "axolotleditor.gtrees.tk" > CNAME
+        cd ..
         cd ..
     - name: Upload
       uses: crazy-max/ghaction-github-pages@v2.6.0
