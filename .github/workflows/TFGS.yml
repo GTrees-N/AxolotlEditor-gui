@@ -29,9 +29,9 @@ jobs:
     - name: Upload
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
-        build_dir: scratch-gui/build
+        build_dir: AxolotlEditor-gui/build
         target_branch: GTrees-N/AxolotlEditor-gui
         verbose: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.D }}
 
