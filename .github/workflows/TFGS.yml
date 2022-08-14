@@ -1,8 +1,10 @@
 name: TFGS
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
 
 jobs:
   build:
@@ -14,22 +16,27 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 10.x
+        node-version: 14.x
     - name: Clone
       run: |
         git clone https://github.com/GTrees-N/AxolotlEditor-gui
     - name: Build
       run: |
         cd AxolotlEditor-gui
+        rm package-lock.json
         npm install
         npm run build
+        cd build
+        touch ./CNAME
+        echo "axolotleditor.gtrees.tk" > CNAME
+        cd ..
         cd ..
     - name: Upload
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
-        build_dir: scratch-gui/build
-        target_branch: GTrees-N/AxolotlEditor-gui
+        build_dir: AxolotlEditor-gui/build
+        target_branch: gh-pages
         verbose: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.D }}
 
