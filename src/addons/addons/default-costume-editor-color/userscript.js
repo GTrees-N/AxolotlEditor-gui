@@ -40,7 +40,7 @@ export default async function ({ addon, global, console, msg }) {
   // https://github.com/LLK/scratch-paint/blob/6733e20b56f52d139f9885952a57c7da012a542f/src/helper/style-path.js#L10
   const MIXED = "scratch-paint/style-path/mixed";
 
-  const SCRATCH_DEFAULT_FILL = parseColor("#9966FF");
+  const SCRATCH_DEFAULT_FILL = parseColor("#000000");
   const SCRATCH_DEFAULT_STROKE = parseColor("#000000");
 
   const TOOL_INFO = Object.assign(Object.create(null), {

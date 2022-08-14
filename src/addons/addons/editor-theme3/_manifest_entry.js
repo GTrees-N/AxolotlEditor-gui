@@ -39,7 +39,7 @@ const manifest = {
       "name": "looks",
       "id": "looks-color",
       "type": "color",
-      "default": "#9966FF",
+      "default": "#000000",
       "allowTransparency": true
     },
     {
@@ -179,7 +179,7 @@ const manifest = {
       "description": "Events, Control, and Custom blocks with 2.0 inspired colors",
       "values": {
         "motion-color": "#4C97FF",
-        "looks-color": "#9966FF",
+        "looks-color": "#FF4C4C",
         "sounds-color": "#CF63CF",
         "events-color": "#DE9E2E",
         "control-color": "#FFBF00",
@@ -243,7 +243,7 @@ const manifest = {
       "description": "Makes block backgrounds black",
       "values": {
         "motion-color": "#4C97FF",
-        "looks-color": "#9966FF",
+        "looks-color": "#FF4C4C",
         "sounds-color": "#CF63CF",
         "events-color": "#FFBF00",
         "control-color": "#FFAB19",

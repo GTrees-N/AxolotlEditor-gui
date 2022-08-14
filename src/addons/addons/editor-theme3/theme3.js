@@ -38,7 +38,7 @@ function updateSettings(addon, newStyle) {
       tertiaryColor: "#3373CC",
     },
     looks: {
-      color: "#9966FF",
+      color: "#000000",
       tertiaryColor: "#774DCB",
     },
     sounds: {

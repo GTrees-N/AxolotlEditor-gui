@@ -30,6 +30,7 @@
     background-color: $motion-primary;
     color: $ui-white;
 }
+
 [theme="dark"] .menu-bar {
     background-color: $motion-primary-dark;
 }
@@ -43,12 +44,12 @@
     flex-grow: 1;
 }
 
-.scratch-logo {
+.AxolotlLogo {
     height:  1.6rem;
     vertical-align: middle;
 }
 
-.scratch-logo.clickable {
+.AxolotlLogo.clickable {
     cursor: pointer;
 }
 

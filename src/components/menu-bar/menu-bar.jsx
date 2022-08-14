@@ -82,7 +82,7 @@ import aboutIcon from './icon--about.svg';
 import errorIcon from './tw-error.svg';
 import themeIcon from './tw-moon.svg';
 
-import scratchLogo from './AxolotlEditor-logo.svg';
+import AxolotlLogo from './AxolotlEditor-logo.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -438,8 +438,8 @@ class MenuBar extends React.Component {
                     <div className={styles.fileGroup}>
                     <div className={classNames(styles.menuBarItem)}>
                             <img
-                                alt="Scratch"
-                                className={classNames(styles.scratchLogo, {
+                                alt="Axolotl"
+                                className={classNames(styles.AxolotlLogo, {
                                     [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                 })}
                                 draggable={false}
@@ -451,7 +451,7 @@ class MenuBar extends React.Component {
                             <div className={classNames(styles.menuBarItem)}>
                                 <img
                                     alt="Scratch"
-                                    className={classNames(styles.scratchLogo, {
+                                    className={classNames(styles.AxolotlLogo, {
                                         [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                     })}
                                     draggable={false}
@@ -1014,7 +1014,7 @@ MenuBar.propTypes = {
 };
 
 MenuBar.defaultProps = {
-    logo: scratchLogo,
+    logo: AxolotlLogo,
     onShare: () => {}
 };
 
